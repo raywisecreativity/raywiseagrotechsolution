@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/vendor/aos.css">
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -42,8 +42,12 @@
 </div>
 
 <!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/2347069629150" class="whatsapp-button" target="_blank">
-  <img src="images/whatsapp icon.png" alt="WhatsApp">
+<a href="https://wa.me/2347069629150" 
+   class="whatsapp-button" 
+   target="_blank">
+
+   <i class="fab fa-whatsapp"></i>
+
 </a>
 
 <!-- CHATBOT WINDOW -->
@@ -223,17 +227,41 @@
 /* WHATSAPP BUTTON */
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;   /* Same line as chatbot */
-  right: 80px;    /* Close beside chatbot icon */
-  width: 45px;    /* Smaller size */
-  height: 45px;
+  bottom: 85px; /* ABOVE chatbot */
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  background: #25D366;
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+
+  text-decoration: none;
+
   z-index: 1000;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+  animation: bounce 1.5s infinite;
 }
 
-.whatsapp-button img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+/* BOUNCING EFFECT */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
     .chatbot-container {
       width: 300px;
