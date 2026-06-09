@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/vendor/aos.css">
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -42,12 +42,8 @@
 </div>
 
 <!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/2347069629150" 
-   class="whatsapp-button" 
-   target="_blank">
-
-   <i class="fab fa-whatsapp"></i>
-
+<a href="https://wa.me/2347069629150" class="whatsapp-button" target="_blank">
+  <img src="images/whatsapp icon.png" alt="WhatsApp">
 </a>
 
 <!-- CHATBOT WINDOW -->
@@ -204,25 +200,18 @@
 
   <!-- CHATBOT STYLE -->
   <style>
-   /* CHATBOT BUTTON */
+    /* CHATBOT BUTTON */
 .chatbot-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-
-  width: 55px;
-  height: 55px;
-
+  width: 50px;   /* Smaller size */
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
-
   cursor: pointer;
-
   z-index: 1000;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-
-  animation: chatbotBounce 1.5s infinite;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 
 .chatbot-button img {
@@ -231,55 +220,20 @@
   object-fit: cover;
 }
 
-/* BOUNCING EFFECT */
-@keyframes chatbotBounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
 /* WHATSAPP BUTTON */
 .whatsapp-button {
   position: fixed;
-  bottom: 85px; /* ABOVE chatbot */
-  right: 20px;
-
-  width: 55px;
-  height: 55px;
-
-  background: #25D366;
-  color: white;
-
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 30px;
-
-  text-decoration: none;
-
+  bottom: 20px;   /* Same line as chatbot */
+  right: 80px;    /* Close beside chatbot icon */
+  width: 45px;    /* Smaller size */
+  height: 45px;
   z-index: 1000;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-
-  animation: bounce 1.5s infinite;
 }
 
-/* BOUNCING EFFECT */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
+.whatsapp-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
     .chatbot-container {
       width: 300px;
@@ -412,15 +366,15 @@
       </nav>
       <!-- END nav -->
 
-      <div class="cover-v1 jarallax" style="background-image: url('images/samuel\ tech\ \(2\).PNG');" id="home-section">
+      <div class="cover-v1 jarallax" style="background-image: url('images/background\ sam\ 2.PNG');" id="home-section">
         <div class="container">
           <div class="row align-items-center">
               
             <div class="col-md-7 mx-auto text-center">
               <br>
               <br>
-              <h1 class="heading gsap-reveal-hero">RAYWISE AGROTECH SOLUTIONS</h1>
-              <h2 class="subheading gsap-reveal-hero">I’m Odukoya Samuel Ayomide  A Web developer and an AL/ML Engineer Based In Lagos,Nigeria</h2>
+              <!-- <h1 class="heading gsap-reveal-hero" style="colour: black; font-weight:bold;">PROGRAMMING THE FUTURE OF AGRICULTURE</h1> -->
+              <h1 class="subheading gsap-reveal-hero" style="colour: black; font-weight: bold;">I’m Odukoya Samuel Ayomide , <br> AI/ML Engineer|Smart Farmer|Tech Entrepreneur <br> <br> Bridging Artificial Intelligence and Sustainable Agriculture.</h1>
             </div>
 
           </div>
@@ -604,41 +558,174 @@
           </div>
           
 
-          <div class="row mt-5 justify-content-between">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-              <figure class="dotted-bg gsap-reveal-img ">
-                <img src="images/samuel.jpeg" alt="Image" class="img-fluid">
-              </figure>
-            </div>
-            <div class="col-lg-4 pr-lg-5">
-              <h3 class="mb-4 heading-h3"><span class="gsap-reveal">At Raywise Agrotech Solutions,</span></h3>
-              <p class="lead gsap-reveal">
-                we specialize in deploying advanced technological frameworks designed for modern businesses, organizations, and the agricultural sector. <br> <br>Our Mission is to transform traditional farming into tech-forward industry where innovation drives every decision into creating <a href="#">Solutions</a>.
-              </p>
-              <p class="mb-4 gsap-reveal">
-                The “R” is creatively filled with livestock imagery chicken, broiler, pig, dairy cattle, and other farm animals, clearly representing a diversified livestock farming system. This highlights the company’s strong foundation in animal agriculture and food production.
-<br>
-<br>
+<div class="row mt-5 justify-content-between">
 
-	•	The “A” incorporates a circuit-board design, symbolizing advanced technology, smart farming, AI automation, web development, and data-driven solutions & agricultural solutions. It reflects expertise in integrating tech & into agriculture.
-<br>
-<br>
-	•	The “S” is shaped with a hand and lightbulb concept, representing solutions, innovation, and support, emphasizing the company’s role in providing practical, intelligent solutions to people,Companies,Organizations ,farmers and agribusinesses.
-<br>
-<br>
-The dominant green color throughout the logo signifies life, growth, productivity, and environmental sustainability.
-<br>
-<br>
-The motto, “Programming the Future of Agriculture,” clearly communicates the brand’s vision, leveraging technology to revolutionize farming, improve efficiency, and secure the future of food production.
-              </p>
-              <p class="gsap-reveal">
-                <a href="./Odukoya_Samuel_International_Profile_CV.pdf" class="btn btn-outline-pill btn-custom-light">Download my CV</a>
-              </p>
+    <!-- Founder Image -->
+    <div class="col-lg-7 mb-5 mb-lg-0">
+        <figure class="dotted-bg gsap-reveal-img">
+            <img src="images/display for customer.PNG" alt="Samuel Odukoya" class="img-fluid">
+        </figure>
+    </div>
+    <div class="col-lg-7 mb-5 mb-lg-0">
+        <figure class="dotted-bg gsap-reveal-img">
+            <img src="images/samuel.jpeg" alt="Samuel Odukoya" class="img-fluid">
+        </figure>
+    </div>
+    <!-- <div class="col-lg-7 mb-5 mb-lg-0">
+        <figure class="dotted-bg gsap-reveal-img">
+            <img src="images/Certificate.jpeg" alt="Samuel Odukoya" class="img-fluid">
+        </figure>
+    </div> -->
+
+    <!-- Company Details -->
+    <div class="col-lg-4 pr-lg-5">
+
+        <h3 class="mb-4 heading-h3">
+            <span class="gsap-reveal">At Raywise Agrotech Solutions,</span>
+        </h3>
+
+        <p class="lead gsap-reveal">
+            We specialize in deploying advanced technological frameworks designed for modern businesses, organizations, and the agricultural sector.
+
+            <br><br>
+
+            Our mission is to transform traditional farming into a technology-driven industry where innovation powers every decision and creates sustainable solutions.
+        </p>
+
+        <p class="mb-4 gsap-reveal">
+
+            The <strong>“R”</strong> is creatively filled with livestock imagery including poultry, pigs, dairy cattle, and other farm animals, representing a diversified livestock production system and our deep roots in agriculture.
+
+            <br><br>
+
+            The <strong>“A”</strong> incorporates a circuit-board design symbolizing technology, AI automation, web development, smart farming, and data-driven agricultural solutions.
+
+            <br><br>
+
+            The <strong>“S”</strong> features a hand and lightbulb concept, representing innovation, support, and practical solutions for farmers, agribusinesses, organizations, and businesses.
+
+            <br><br>
+
+            The dominant green color represents growth, productivity, sustainability, and environmental responsibility.
+
+            <br><br>
+
+            Our motto,
+            <strong>"Programming the Future of Agriculture"</strong>,
+            reflects our commitment to leveraging technology to revolutionize farming and secure the future of food production.
+        </p>
+
+        <!-- VERIFIED BUSINESS -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-body text-center">
+
+                <h5 class="text-success">
+                    ✅ Verified & Registered Business
+                </h5>
+
+                <p>
+                    Raywise Agrotech Solutions is officially registered with the
+                    Corporate Affairs Commission (CAC), Nigeria.
+                </p>
+
+                <a href="images/Certificate.jpeg" target="_blank">
+                    <img
+                        src="images/Certificate.jpeg"
+                        alt="CAC Certificate"
+                        class="img-fluid rounded shadow"
+                        style="max-height:300px;">
+                </a>
+
+                <small class="text-muted d-block mt-2">
+                    Click certificate to view full size
+                </small>
+
             </div>
-            
-          </div>
         </div>
-      </div>
+
+       <!-- PAYMENT SECTION -->
+<div class="card shadow-sm mb-4"
+     style="
+     background:#198754;
+     color:white;
+     border:none;
+     border-radius:15px;
+     ">
+
+    <div class="card-body">
+
+        <details>
+
+            <summary style="
+                cursor:pointer;
+                font-weight:bold;
+                font-size:18px;
+                color:white;
+            ">
+                💳 Click to View Company Payment Details
+            </summary>
+
+            <div class="mt-3">
+
+                <p>
+                    <strong>🏦 Bank:</strong> Globus Bank 
+                </p>
+
+                <p>
+                    <strong>👤 Account Name:</strong><br>
+                    Raywise Agrotech Solutions
+                </p>
+
+                <!-- Account Number Box -->
+                <div style="
+                    background:white;
+                    padding:15px;
+                    border-radius:10px;
+                    text-align:center;
+                    margin:15px 0;
+                ">
+
+                    <h3 style="
+                        margin:0;
+                        color:#198754;
+                        font-weight:bold;
+                        letter-spacing:2px;
+                    ">
+                        1000589889
+                    </h3>
+
+                    <small style="color:#666;">
+                        Globus Bank
+                    </small>
+
+                </div>
+
+                <p style="color:#d4edda;">
+                    ✅ Payments made to this account are verified and processed directly by Raywise Agrotech Solutions.
+                </p>
+
+            </div>
+
+        </details>
+
+    </div>
+</div>
+            </div>
+        </div>
+
+        <!-- DOWNLOAD CV -->
+        <p class="gsap-reveal">
+            <a href="./Odukoya_Samuel_International_Profile_CV.pdf"
+               class="btn btn-outline-pill btn-custom-light">
+                Download My CV
+            </a>
+        </p>
+
+    </div>
+
+</div>
+```
+
 
       <div class="unslate_co--section" id="services-section">
         <div class="container">
